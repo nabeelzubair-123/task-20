@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>QUESTION 20</title>
+</head>
+<body>
+<script>
+function array_element_replace(arr, old_value, new_value) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === old_value) {
+      arr[i] = new_value;
+    }
+  }
+  return arr;
+}
+num = [1, 9, 3, 9, 9, 8, 1, 9];
+document.write("Original Array: " + num + "<br>");
+document.write(array_element_replace(num, 9, 0));
+</script>
+</body>
+</html>
